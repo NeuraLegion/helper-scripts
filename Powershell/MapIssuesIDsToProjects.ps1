@@ -11,13 +11,13 @@
 .PARAMETER IssuesIds
     Specifies the single Issue ID or Multiple Issue IDs separated by comma ( "issueIDxy,issueIDyxx,issueIDxyxyx") or path to the CSV file containing the list of the Issue IDs (comma separated no headers)
 .PARAMETER Results
-    Specifies the path to the CSV file results file will be stored. NOTE: Results CSV file will be overwritten on each run. Default value: "IssuesIdsMappedToProjects.csv"
+    Specifies the path to the CSV file in which the results will be stored. NOTE: Results CSV file will be overwritten on each run. Default value: "IssuesIdsMappedToProjects.csv"
 .EXAMPLE
-    MapIssuesIDsToProjects.ps1 MapIssuesIDsToProjects -BaseUri "https://app.brightsec.com" -Token "xxxxx.xxxx.xxxxxxxxxxxxx" -IssuesIds "wxA8gWcdummyx7Pg8mDE" -Results "C:\Users\Support01\Downloads\IssuesIdsMappedToProjects.csv"
+    MapIssuesIDsToProjects.ps1 -BaseUri "https://app.brightsec.com" -Token "xxxxx.xxxx.xxxxxxxxxxxxx" -IssuesIds "wxA8gWcdummyx7Pg8mDE" -Results "C:\Users\Support01\Downloads\IssuesIdsMappedToProjects.csv"
 .EXAMPLE
-    MapIssuesIDsToProjects.ps1 MapIssuesIDsToProjects -BaseUri "https://app.brightsec.com" -Token "xxxxx.xxxx.xxxxxxxxxxxxx" -IssuesIds "wxA8gWcdummyx7Pg8mDE,frVpYSmeadummyiUNdC7y" -Results "C:\Users\Support01\Downloads\IssuesIdsMappedToProjects.csv"
+    MapIssuesIDsToProjects.ps1 -BaseUri "https://app.brightsec.com" -Token "xxxxx.xxxx.xxxxxxxxxxxxx" -IssuesIds "wxA8gWcdummyx7Pg8mDE,frVpYSmeadummyiUNdC7y" -Results "C:\Users\Support01\Downloads\IssuesIdsMappedToProjects.csv"
 .EXAMPLE
-    MapIssuesIDsToProjects.ps1 MapIssuesIDsToProjects -BaseUri "https://app.brightsec.com" -Token "xxxxx.xxxx.xxxxxxxxxxxxx" -IssuesIds "C:\Users\Support01\Downloads\test.csv"
+    MapIssuesIDsToProjects.ps1 -BaseUri "https://app.brightsec.com" -Token "xxxxx.xxxx.xxxxxxxxxxxxx" -IssuesIds "C:\Users\Support01\Downloads\test.csv"
 .NOTES
     Developed by Mahir Mujkanovic @BrightSec.com 19.10.2024 v1.0 
 .LINK
