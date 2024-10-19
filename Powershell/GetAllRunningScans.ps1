@@ -11,8 +11,8 @@
 .PARAMETER Token
     Specifies the Token on the target organization
 .PARAMETER Results
-    Specifies the path to the CSV file results file will be stored. NOTE: Results CSV file will be overwritten on each run.
-    Specified results path must be only a Filename example "AllRunningScans.csv" or a valid path including the Filename, example: "C:\Users\Support201\AllRunningScans.csv""
+    Specifies the path to the CSV file results will be stored in. NOTE: Results CSV file will be overwritten on each run.
+    Specified results path must be only a Filename example: "AllRunningScans.csv" or a valid path including the Filename, example: "C:\Users\Support201\AllRunningScans.csv""
 .EXAMPLE
     GetAllRunningScans.ps1 -Token "xxxxx.xxxx.xxxxxxxxxxxxxxxxxx"
 .EXAMPLE
